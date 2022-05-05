@@ -6,17 +6,21 @@ It's `styles` (with an s) prop should be of same type as the [`css()`](makestyle
 
 ```tsx
 import { GlobalStyles } from "tss-react";
+import { useStyles } from "tss-react/mui";
 
 function MyComponent() {
+
+    const { theme } = useStyles();
+
     return (
         <>
             <GlobalStyles
                 styles={{
                     "body": {
-                        "backgroundColor": "pink",
+                        "backgroundColor": theme.palette.background.default,
                     },
                     ".foo": {
-                        "color": "cyan",
+                        "color": "cyan"
                     },
                 }}
             />
