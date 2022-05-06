@@ -1,5 +1,15 @@
 # Next.js
 
+{% hint style="danger" %}
+Do not upgrade to react-dom 18 yet, it's not supported by MUI.
+
+There is a compatibility problem between emotion Next.js and React 18.
+
+It is not related to tss-react it affects MUI as a whole.
+
+Follow the advancement of the issue on [Next.js repo](https://github.com/vercel/next.js/issues/36675), on [MUI repo](https://github.com/mui/material-ui/issues/32051), on [TSS repo](https://github.com/garronej/tss-react/issues/82).
+{% endhint %}
+
 Setup to make SSR work with [Next.js](https://nextjs.org).
 
 ```
@@ -8,14 +18,6 @@ yarn add @emotion/server
 
 {% tabs %}
 {% tab title="With MUI" %}
-{% hint style="danger" %}
-Do not upgrade to react-dom 18 yet, it's not supported by MUI. &#x20;
-
-Follow resolution [here](https://github.com/mui/material-ui/issues/32051#issuecomment-1100986622).
-
-The problem should be fixed with Next.js v12.1.6 that should release soon. &#x20;
-{% endhint %}
-
 {% hint style="info" %}
 The following instructions are assuming you are using `@mui`v5.
 
