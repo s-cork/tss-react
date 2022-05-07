@@ -16,5 +16,6 @@
   * [Other backends](ssr/other-backends.md)
 * [🦱 Your own classes prop](your-own-classes-prop.md)
 * [🍭 MUI Theme styleOverrides](mui-theme-styleoverrides.md)
+* [🧹 Detecting unused classes](detecting-unused-classes.md)
 * [📦 Publish a module that uses TSS](publish-a-module-that-uses-tss.md)
 * [🔩 single-spa](single-spa.md)
