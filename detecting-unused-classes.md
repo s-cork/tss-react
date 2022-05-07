@@ -17,7 +17,7 @@ yarn add --dev eslint-plugin-tss-unused-classes
 **Case 1**: You are in a [`create-react-app`](https://create-react-app.dev) project:\
 Edit your `package.json`:
 
-```
+```json
 {
   //...
   "eslintConfig": {
@@ -38,7 +38,7 @@ Edit your `package.json`:
 **Case 2**: You have installed ESLint manually:\
 Edit your `.eslintrc.js` file:
 
-```js
+```javascript
 module.exports = {
   // ...
   plugins: [
