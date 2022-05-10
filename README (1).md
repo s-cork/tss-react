@@ -14,10 +14,6 @@ yarn add tss-react @emotion/react @mui/material @emotion/styled
 If you are migrating from `@material-ui/core` (v4) to `@mui/material` (v5) checkout the migration guide from MUI's documentation website [here](https://mui.com/guides/migration-v4/#2-use-tss-react).
 {% endhint %}
 
-{% hint style="info" %}
-If you are still using material-ui v4 [here is a reference setup](https://github.com/garronej/tss-react/tree/main/src/test/apps/muiV4ssr).
-{% endhint %}
-
 ```tsx
 import { render } from "react-dom";
 import { CacheProvider } from "@emotion/react";
@@ -157,6 +153,10 @@ const useStyles = makeStyles<{ color: "red" | "blue" }>()(
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="info" %}
+You can detect unused classes with [this ESLint plugin](detecting-unused-classes.md).
+{% endhint %}
 
 {% hint style="success" %}
 If you don't want to end up writing things like:

@@ -9,7 +9,7 @@ Soon, it won't be mandatory to explicitly provide an emotion cache for TSS to pl
 
 Then, it wont be necessary to give specific SSR instructions. &#x20;
 
-[Follow the advancement](https://github.com/mui/material-ui/pull/32067).
+[Follow the advancement](https://github.com/mui/material-ui/issues/28045#issuecomment-1072978306).
 {% endhint %}
 
 {% tabs %}
