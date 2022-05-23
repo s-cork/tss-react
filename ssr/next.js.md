@@ -1,13 +1,7 @@
 # Next.js
 
 {% hint style="danger" %}
-Do not upgrade to react-dom 18 yet, it's not supported by MUI.
-
-There is a compatibility problem between emotion Next.js and React 18.
-
-It is not related to tss-react it affects MUI as a whole.
-
-Follow the advancement of the issue on [Next.js repo](https://github.com/vercel/next.js/issues/36675), on [MUI repo](https://github.com/mui/material-ui/issues/32051), on [TSS repo](https://github.com/garronej/tss-react/issues/82).
+Next.js + React 18 -> SSR will only work with Next.js 12.1.7-canary.4 or newer.
 {% endhint %}
 
 Setup to make SSR work with [Next.js](https://nextjs.org).
