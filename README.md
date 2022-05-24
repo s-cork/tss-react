@@ -8,7 +8,7 @@ description: makeStyles is dead. Long live makeStyles.
 
 'tss-react' is intended to advantageously replace the now deprecated [@material-ui v4 makeStyles](https://material-ui.com/styles/basics/#hook-api) and [react-jss](https://cssinjs.org/react-jss/?v=v10.9.0) by providing much better TypeScript support.
 
-* ✅ Seamless integration with [MUI](https://mui.com) and [material-ui v4](https://v4.mui.com).
+* ✅ Seamless integration with [MUI](https://mui.com) and [material-ui v4](https://v4.mui.com/).
 * ✅ [`withStyles`](https://v4.mui.com/styles/api/#withstyles-styles-options-higher-order-component) API support.
 * ✅ [JavaScript support](https://github.com/garronej/tss-react/issues/28).
 * ✅ Server side rendering support (e.g: Next.js, Gatsby).

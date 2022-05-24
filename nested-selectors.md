@@ -111,3 +111,55 @@ The render of the avove code
 ## `withStyles`
 
 {% embed url="https://user-images.githubusercontent.com/6702424/143791304-7705816a-4d25-4df7-9d45-470c5c9ec1bf.mp4" %}
+
+## SSR
+
+With server side rendering enabled you could end up with warnings like: &#x20;
+
+{% hint style="danger" %}
+`Warning: Prop className did not match. Server: "...tss-XXX-root-ref..." Client: "...tss-YYY-root-ref..."`.
+{% endhint %}
+
+![Example of error you may run against with Next.js](.gitbook/assets/image.png)
+
+You can fix this error by providing an uniq id when calling makeStyles or withStyles (It will set XXX and YYY). &#x20;
+
+{% hint style="info" %}
+Short unique identifier can be generated with [this website](https://shortunique.id/).
+{% endhint %}
+
+```diff
+ const useStyles = makeStyles<
+     { color: "primary" | "secondary" },
+     "child" | "small"
+ >({
++    uniqId: "QnWmDL"
+ })((theme, { color }, classes) => ({
+     "root": {
+         "padding": 30,
+         [`&:hover .${classes.child}`]: {
+             "backgroundColor": theme.palette[color].main
+         }
+     },
+     "small": {},
+     "child": {
+         "border": "1px solid black",
+         "height": 50,
+         [`&.${classes.small}`]: {
+             "height": 30
+         }
+     }
+ }));
+ 
+  const MyBreadcrumbs = withStyles(
+     Breadcrumbs,
+     (theme, _props, classes) => ({
+         "ol": {
+             [`& .${classes.separator}`]: {
+                 "color": theme.palette.primary.main
+             }
+         }
+     }), 
++    { uniqId: "vZHt3n" }
+ );
+```

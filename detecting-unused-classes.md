@@ -14,7 +14,7 @@ yarn add --dev eslint-plugin-tss-unused-classes
 
 1. Enable it in you ESLint config
 
-**Case 1**: You are in a [`create-react-app`](https://create-react-app.dev) project:\
+**Case 1**: You are in a [`create-react-app`](https://create-react-app.dev/) project:\
 Edit your `package.json`:
 
 ```json
