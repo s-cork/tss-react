@@ -2,7 +2,7 @@
 description: Configure SSR in in frameworks other than Next.js like for example Express.js
 ---
 
-# Other backend
+# Other backends
 
 ```
 yarn add @emotion/server
@@ -90,3 +90,7 @@ export function App(){
     );
 }
 ```
+
+{% hint style="warning" %}
+If you are using nested selectors, you may need to provide [uniq identifiers to your stylesheet](../nested-selectors.md#ssr).
+{% endhint %}
