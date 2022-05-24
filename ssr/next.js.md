@@ -91,5 +91,7 @@ What's important to remember however is that new instances of the caches should 
 {% endtab %}
 {% endtabs %}
 
-
+{% hint style="warning" %}
+If you are using nested selectors, you may need to provide [uniq identifiers to your stylesheet](../nested-selectors.md#ssr).
+{% endhint %}
 
