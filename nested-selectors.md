@@ -122,10 +122,10 @@ With server side rendering enabled you could end up with warnings like: &#x20;
 
 ![Example of error you may run against with Next.js](.gitbook/assets/image.png)
 
-You can fix this error by providing an uniq id when calling makeStyles or withStyles (It will set XXX and YYY). &#x20;
+You can fix this error by providing an uniq id when calling `makeStyles` or `withStyles` (It will set XXX and YYY). &#x20;
 
 {% hint style="info" %}
-Short unique identifier can be generated with [this website](https://shortunique.id/).
+Short unique identifiers can be generated with [this website](https://shortunique.id/).
 {% endhint %}
 
 ```diff
