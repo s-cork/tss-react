@@ -117,7 +117,7 @@ The render of the avove code
 With server side rendering enabled you could end up with warnings like: &#x20;
 
 {% hint style="danger" %}
-`Warning: Prop className did not match. Server: "...tss-XXX-root-ref..." Client: "...tss-YYY-root-ref..."`.
+`Warning: Prop className did not match. Server: "tss-XXX-root-ref" Client: "tss-YYY-root-ref"`.
 {% endhint %}
 
 ![Example of error you may run against with Next.js](.gitbook/assets/image.png)
