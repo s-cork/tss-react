@@ -133,6 +133,7 @@ Short unique identifiers can be generated with [this website](https://shortuniqu
      { color: "primary" | "secondary" },
      "child" | "small"
  >({
+     name: "MyComponent"
 +    uniqId: "QnWmDL"
  })((theme, { color }, classes) => ({
      "root": {
@@ -160,6 +161,9 @@ Short unique identifiers can be generated with [this website](https://shortuniqu
              }
          }
      }), 
-+    { uniqId: "vZHt3n" }
+     {
+          name: "MyBreadcrumbs",
++         uniqId: "vZHt3n" 
+     }
  );
 ```
