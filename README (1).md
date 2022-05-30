@@ -4,6 +4,12 @@ description: Start using TSS, with or without MUI
 
 # 🔧 Setup
 
+{% hint style="info" %}
+`tss-react` has over 100 000 monthly NPM download and fewer than 200 ⭐️ on GitHub.
+
+If you use TSS in production, please consider [giving the project a star](https://github.com/garronej/tss-react).
+{% endhint %}
+
 {% tabs %}
 {% tab title="With MUI" %}
 ```bash
