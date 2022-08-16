@@ -7,16 +7,16 @@ export { createMakeStyles };
 import { createWithStyles } from "./withStyles";
 export { createWithStyles };
 
-/** @see <https://docs.tss-react.dev/api-references/keyframes> */
+/** @see <https://docs.tss-react.dev/v/v3-1/page-1/keyframes> */
 export { keyframes } from "@emotion/react";
 
-/** @see <https://docs.tss-react.dev/api-references/globalstyles> */
+/** @see <https://docs.tss-react.dev/v/v3-1/page-1/globalstyles> */
 export { GlobalStyles } from "./GlobalStyles";
 
-/** @see <https://docs.tss-react.dev/cache> */
+/** @see <https://docs.tss-react.dev/v/v3-1/readme-1-1> */
 export { getTssDefaultEmotionCache, TssCacheProvider } from "./cache";
 
-/** @see <https://docs.tss-react.dev/api-references/makestyles-usestyles> */
+/** @see <https://docs.tss-react.dev/v/v3-1/page-1/makestyles-usestyles> */
 export function createMakeAndWithStyles<Theme>(params: {
     useTheme: () => Theme;
 }) {
